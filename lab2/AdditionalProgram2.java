@@ -1,43 +1,15 @@
 package lab2;
 
-import java.util.*;
+/*
+ * Write a program that creates a "triangular" two-dimensional array A of 10 rows. The first 
+row has length 1, the second row has length 2, the third row has length 3, and so on. Then 
+initialize the array using nested for loops so that the value of A[i][j] is i+j. Finally, print 
+out the array in a nice triangular form 
+ */
 
-public class AdditionalProgram2 
-{
-	/**
-	 * @param n : stores value whose sum is to be calculated
-	 * @return  : the value the sum of the digits of n
-	 */
-	static int findSum(int n)
-	{
-		// calculating the sum of the digits in n
-		int temp = n; 
-		int sum = 0;
-		while(temp > 0) 
-		{
-			int digit = temp%10; 
-			sum = sum + digit; 
-			temp = temp/10;
-		}
-		
-		return sum;
-	}
-	
-	public static void main(String args[])
-	{
-		// creating Scanner object
-		Scanner sc = new Scanner(System.in);
-				
-		// declaration and initialization 
-		int n;
-				
-		// reading the number from the user
-		System.out.println("Please enter the number: "); 
-		n = sc.nextInt(); 
-				
-		int sum = findSum(n);
-				
-		// displaying the SOD: 
-		System.out.println("the sum of the digits on " + n + " is: " + sum);
+public class AdditionalProgram2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
 	}
 }
